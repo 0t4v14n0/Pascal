@@ -1,0 +1,31 @@
+Program Pzim ;
+var   dias:integer;
+      valor,multa,juros,e,f,g,h,i:real;
+      nome1,nome2:string;
+Begin
+    writeln('Banco: ');
+           readln(nome1);
+    writeln('Nome do Cliente: ');
+           readln(nome2);
+    writeln('Valor da Conta: ');
+           readln(valor);					 
+    writeln('Quantos dias de atraso: ');
+           readln(dias);					 
+    writeln('Multa por dias de atraso: ');
+           readln(multa);
+    writeln('Porcentagem de juros: ');
+           readln(juros);
+					 h:=juros/100;
+					 e:=multa*dias;
+					 f:=h*valor;
+					 i:=f*dias;
+					 g:=valor+e+i;
+					 clrscr;
+		writeln('|---------------------------------------------------------------------------|');
+		writeln('|-Nome do Banco:              ',nome1);
+		writeln('|-Nome do cliente:            ',nome2);
+		writeln('|-O valor da multa por ',dias,' dias de atraso e R$:',e);
+		writeln('|-O valor dos juros a ser pago por ',dias,' dias de atraso e R$: ',i);
+		writeln('|-O valor toal da conta a ser pago ja com a multa e juros e R$:',g);
+		writeln('|---------------------------------------------------------------------------|');			 					 					            
+End.
